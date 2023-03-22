@@ -18,19 +18,19 @@ router.get('/downloads',(req,res)=>{
      res.download(path.resolve(__dirname)+'/about.html');
  
  })
-router.get('/api/products',apiKeyMiddleware,(req,res)=>{
+// router.get('/api/products',apiKeyMiddleware,(req,res)=>{
 
-   // res.download(path.resolve(__dirname)+'/about.html');
-   res.json([
-    {
-        id:'123',
-        name:"chrome",
-    },{
-        id:'124',
-        name:"firebox"
-    }
-   ])
+//    // res.download(path.resolve(__dirname)+'/about.html');
+//    res.json([
+//     {
+//         id:'123',
+//         name:"chrome",
+//     },{
+//         id:'124',
+//         name:"firebox"
+//     }
+//    ])
 
-})
+// })
 
 module.exports=router;
